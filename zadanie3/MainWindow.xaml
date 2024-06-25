@@ -1,0 +1,25 @@
+﻿<Window x:Class="pz4_penkina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz4_penkina"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Человек:"/>
+            <TextBlock Text="{Binding Path=speciality, ElementName=car}"/>
+            <TextBlock Text="{Binding Path=job, ElementName=car}"/>
+            <TextBlock Text="{Binding Path=experience, ElementName=car}"/>
+            <TextBlock Text="{Binding Path=pension, ElementName=car}"/>
+            <Button Content="Показать" Click="ShowPeople"/>
+            <Separator/>
+            <Label Content="Данные:"/>
+            <TextBlock Text="{Binding Path=speciality, ElementName=airplane}"/>
+            <TextBlock Text="{Binding Path=knowledge, ElementName=airplane}"/>
+            <TextBlock Text="{Binding Path=significant, ElementName=airplane}"/>
+            <Button Content="Показать" Click="ShowParametrs"/>
+        </StackPanel>
+    </Grid>
+</Window>
