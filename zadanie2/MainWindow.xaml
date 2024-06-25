@@ -1,0 +1,42 @@
+﻿<Window x:Class="pz2_penkina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz2_penkina"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Специальность:"/>
+            <TextBox Text="{Binding speciality}"/>
+            <Label Content="Работа:"/>
+            <TextBox Text="{Binding job}"/>
+
+            <StackPanel>
+                <TextBlock>Особенности человека:</TextBlock>
+                <Label Content="Опыт:"/>
+                <TextBox Text="{Binding experience}"/>
+                <Label Content="Знания:"/>
+                <TextBox Text="{Binding knowledge}"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Помощь:"/>
+                <TextBox Text="{Binding helping}"/>
+                <Label Content="Пенсия:"/>
+                <TextBox Text="{Binding pension}"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Звание:"/>
+                <TextBox Text="{Binding rank}"/>
+                <Label Content="Отставка:"/>
+                <TextBox Text="{Binding resignation}"/>
+            </StackPanel>
+
+            <Button Content="Добавить" Width="80" HorizontalAlignment="Left"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
